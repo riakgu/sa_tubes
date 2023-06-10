@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Similarity</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Similarity</h1>
+        <div class="container-result">
+            <p>LCS Length: {{ lcs_length }}</p>
+            <p>Running Time: {{ running_time }} seconds</p>
+            <p>Similarity: {{ similarity }}%</p>
+            <p>Algorithm: {{ algorithm }}</p>
+        </div>
+        <a href="javascript:history.back()"><button>Back</button></a>
+    </div>
+</body>
+</html>

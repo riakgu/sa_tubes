@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Similarity</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Similarity</h1>
+        <h3>Kelompok 11</h3>
+
+        <form action="/result" method="post">
+            <label for="text1">Text 1:</label><br>
+            <textarea name="text1" placeholder="Enter text 1" rows="10" cols="50" required></textarea><br><br>
+            <label for="text2">Text 2:</label><br>
+            <textarea name="text2" placeholder="Enter text 2" rows="10" cols="50" required></textarea><br><br>
+            <label for="algorithm">Algorithm:</label><br>
+            <select id="algorithm" name="algorithm">
+                <option value="bf">Brute Force</option>
+                <option value="dp">Dynamic Programming</option>
+            </select><br><br>
+            <input type="submit" value="Compare">
+        </form>
+    </div>
+</body>
+</html>
