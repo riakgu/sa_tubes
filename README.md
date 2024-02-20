@@ -1,4 +1,4 @@
-# Tubes SA Kelompok 11
+<h1 align="center">Text Similarity App</h1>
 
 1. Install module Flask
 ```sh
